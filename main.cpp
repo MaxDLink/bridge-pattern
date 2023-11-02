@@ -20,19 +20,19 @@ int main() {
 
 
     // //builder pattern 
-    // algo.setExecutionType(Sort::Configuration::ITERATIVE); 
-    // algo.setStorageType(Sort::Configuration::LIST); 
-    // algo.Select(Sort::SortingAlgos::BINARYTREE); 
+    algo.setExecutionType(Sort::Configuration::ITERATIVE); 
+    algo.setStorageType(Sort::Configuration::LIST); 
+    algo.Select(Sort::SortingAlgos::BINARYTREE); 
 
-    // algo.getConfiguration();
+    algo.getConfiguration();
 
-    // //cloning 
-    // std::cout << "NEW ALGO: " << std::endl;
-    // Sort* newAlgo = (Sort*)algo.Clone(); //clones algo and casted as sort *. software sets properties! 
-    // newAlgo->getConfiguration(); //should be the same as algo.getConfiguration()
-    // newAlgo->Load(); //loads data in
-    // newAlgo->Display(); //displays algo to console
-    // newAlgo->Execute(); //should do a sort
-    // newAlgo->Display(); //displays algo to console, post sort. Should see a binary tree sort 
+    //cloning 
+    std::cout << "NEW ALGO: " << std::endl;
+    Sort* newAlgo = (Sort*)algo.Clone(); //clones algo and casted as sort *. software sets properties! 
+    newAlgo->getConfiguration(); //should be the same as algo.getConfiguration()
+    newAlgo->Load(); //loads data in
+    newAlgo->Display(); //displays algo to console
+    newAlgo->Execute(); //should do a sort
+    newAlgo->Display(); //displays algo to console, post sort. Should see a binary tree sort 
 
 }
