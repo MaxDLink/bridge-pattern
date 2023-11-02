@@ -32,8 +32,9 @@ class Algorithm{
 
     enum SearchAlgo{
         DFS = Algorithm::SortingAlgos::LAST, //last added here so that you know where you left off in SortingAlgos.
-        BFS, 
-        LAST //this is the last of the SearchAlgos  
+        BFS
+        // BFS, 
+        // LAST //this is the last of the SearchAlgos  
     }; 
     //do not know how many algorithms you have, so you need to add LAST as a marker that tells you where the last algo is, you can do a for loop that starts at 0 and increments to last. This lets others add as many algorithms you want. 
     //essentially creating an index with the names of the sorting algorithms. Pass in 0 if you want BUBBLE etc. 
